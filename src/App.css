@@ -1,0 +1,408 @@
+.App {
+  text-align: center;
+
+}
+
+* {
+      box-sizing: border-box
+
+}
+.App-logo {
+/*  animation: App-logo-spin infinite 20s linear;
+*/  height: 50px;
+    float: left;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  overflow: hidden;
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+  .App-logo:hover {
+    cursor: pointer;
+
+
+  }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+li {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#intro {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: skyblue;
+  height: 60vh;
+  font-family: 'Dosis', sans-serif;
+  margin-top: 50px;
+}
+
+#intro div {
+    width: calc(1/2*100% - (1 - 1/2)*10px);
+
+}
+
+#eddi {
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+#eddi p {
+      line-height: 1.5;
+      font-size: 16px;
+}
+
+h1 {
+
+      font-size: 35px;
+
+ }
+
+#subscribe {
+    border-radius: 5px;
+/*    width: 25vw;
+*/
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+    font-size: 1.8em;
+
+}
+
+#subscribe h5 {
+  text-align: left;
+      height: 25px;
+    margin: 41.5px;
+
+}
+
+#subscribe div {
+  background: white;
+  width: 85%;
+  margin: auto;
+  padding: 2px;
+  padding-bottom: 31px;
+   -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  border-radius: 4px;
+
+}
+
+
+
+input {
+    display: flex;
+    margin:auto;
+    font-size: .5em;
+    width: 80%;
+    margin-bottom: 8px;
+    padding: 5px;
+    outline: none;
+}
+
+input:focus {
+   background: darkgrey;
+   color: white;
+}
+
+
+
+button {
+  font-size: 17px;
+    color: white;
+    background: darkgrey;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    transition: .3s;
+      font-family: 'Dosis', sans-serif;
+
+}
+
+button:hover {
+  background: #68df86;
+  color: white;
+  transition: .3s;
+  cursor: pointer;
+}
+
+
+#about {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #68df86;
+    height: 90vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+#about div {
+  width: 43vh;
+  font-size: 15px;
+  padding: 30px;
+  margin: auto;
+  font-family: helvetica;
+  background: white;
+  height: 45vh;
+ -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  border-radius: 5px;
+
+
+
+}
+
+#about div i {
+ margin-top: 26px
+
+
+
+}
+
+#about div .fa, .fas, .far {
+    color: #68df86;
+
+}
+
+#about h2 {
+  color: #222;
+}
+
+#about div p {
+  font-weight: 100;
+
+  color: #222;
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  #about div {
+    width: 37vh;
+    font-size: 13px;
+    padding: 50px;
+       margin-bottom: 3em;
+        height: 26em;
+
+    font-family: helvetica;
+
+
+  }
+
+   #about {
+    height: auto;
+    padding: 3em 3em 0 3em;
+  }
+
+  #eddi {
+    margin: 0 auto;
+     padding-top: unset;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+
+  #about div {
+    width: 36vh;
+    font-size: 13px;
+    padding: 50px;
+       margin-bottom: 3em;
+
+    font-family: helvetica;
+
+
+  }
+
+   #about {
+    height: auto;
+  }
+
+  #eddi {
+    margin: 0 auto;
+     padding-top: unset;
+  }
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+
+  #about div {
+    width: 50vh;
+    font-size: 15px;
+    padding: 50px;
+       margin-bottom: 3em;
+    font-family: helvetica;
+        height: 26em;
+
+
+
+  }
+
+ #about {
+    height: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  #about {
+    height: auto;
+  }
+
+  #about div {
+    width: 50vh;
+    font-size: 15px;
+    padding: 50px;
+       margin-bottom: 3em;
+       margin-top: 3em;
+    font-family: helvetica;
+        height: 23em;
+
+
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  #intro {
+    display: block;
+    height: auto;
+  }
+
+  #intro #subscribe {
+    width: unset;
+
+  }
+
+  #intro #eddi {
+    width: unset;
+    height: 100vh;
+
+  }
+
+  #intro img {
+    margin-top: 20vh;
+
+
+  }
+
+
+  #subscribe h5 {
+    text-align: center;
+  }
+
+  #subscribe div {
+    width: 95%;
+    margin-bottom: 11px;
+  }
+
+  #about {
+    height: auto;
+
+  }
+
+  #about div {
+    width: 100%;
+    font-size: 15px;
+    padding: 50px;
+    margin-bottom: 3em;
+    font-family: helvetica;
+        height: 28em;
+
+/*    background: unset;
+*//*    box-shadow: unset;
+*/  }
+
+  #about div .fa, .fas, .far {
+    color: #68df86;
+
+}
+}
+
+#faq {
+  height: 60vh;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+    transition: .3s;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  transition: .3s;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+  margin-top: -1.5px;
+  transition: .3s;
+
+}
+
+.active:after {
+  content: "\2212";
+  transition: .3s;
+
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+}
+
